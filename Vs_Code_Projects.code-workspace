@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"name": "flexbox_grid",
+		"path": "../flexbox_grid"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Vs_Code_Projects"
+  }
+}
