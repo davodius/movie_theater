@@ -86,12 +86,6 @@ ul {
   border-radius: 6px;
 }
 
-.sidebar {
-  grid-area: side;
-  background-color: yellow;
-  border-radius: 6px;
-}
-
 .img1 {
   grid-area: img1;
   background-color: black;
@@ -128,6 +122,12 @@ ul {
   border-radius: 6px;
 }
 
+.sidebar {
+  grid-area: side;
+  background-color: yellow;
+  border-radius: 6px;
+}
+
 /* sidebar movies container */
 .sidebar-container {
   display: flex;
@@ -148,6 +148,7 @@ ul {
   margin: 5% 0px -5% 5%;
 }
 
+/* movies in sidebar */
 .movie {
   width: 90%;
   height: 90px;
