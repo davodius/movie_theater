@@ -30,11 +30,17 @@ body {
 header {
   display: flex;
   grid-area: head;
-  background-color: red;
+  background-color: #b30623;
   padding: 2rem;
   border-radius: 6px;
   justify-content: center;
   place-items: center;
+}
+
+/* logo in header ↑ */
+.img-logo {
+  height: 10%;
+  width: 10%;
 }
 
 .large-img {
@@ -42,6 +48,29 @@ header {
   grid-area: img;
   background-color: blue;
   border-radius: 6px;
+}
+
+/* large-image ↑ */
+.img-test {
+  height: 100%;
+  width: 100%;
+}
+
+/* container for list in header */
+.flex-container {
+  background-color: #b30623;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* ul - unordened list for 3 buttons in corner */
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
 }
 
 .img-box {
@@ -99,25 +128,7 @@ header {
   border-radius: 6px;
 }
 
-.flex-container {
-  background-color: pink;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /*position: center*/
-  /*bottom: 30px;*/
-  /* ser till att containers fyller parent width */
-  /*align-content: space-around;*/
-  width: 100%;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  list-style: none;
-}
-
+/* sidebar movies container */
 .sidebar-container {
   display: flex;
   flex-direction: column;
@@ -125,7 +136,7 @@ ul {
   gap: 20px;
 }
 
-/* REMEMBER CLOCK */
+/* REMEMBER CLOCK (for margins) */
 .popmov {
   align-self: normal;
   margin: 5% 0px -5% 5%;
@@ -142,10 +153,4 @@ ul {
   height: 90px;
   background-color: crimson;
   border-radius: 6px;
-}
-
-/* test av iinlägg av bild prova med wbap igen istället för jpeg */
-.img-test {
-  width: 200px;
-  height: 100px;
 }
