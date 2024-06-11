@@ -39,8 +39,9 @@ header {
 
 /* logo in header ↑ */
 .img-logo {
-  height: 10%;
-  width: 10%;
+  height: 20%;
+  width: 20%;
+  margin-left: 0%;
 }
 
 .large-img {
@@ -54,6 +55,7 @@ header {
 .img-test {
   height: 100%;
   width: 100%;
+  border-radius: 6px;
 }
 
 /* container for list in header */
@@ -71,6 +73,9 @@ ul {
   flex-direction: row;
   gap: 30px;
   list-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .img-box {
@@ -120,6 +125,33 @@ ul {
   grid-area: img6;
   background-color: black;
   border-radius: 6px;
+}
+
+.nowplay {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.nowplay1 {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nowplay2 {
+}
+
+.nowplay3 {
+}
+
+.nowplay4 {
+}
+
+.nowplay5 {
+}
+
+.nowplay6 {
 }
 
 .sidebar {
