@@ -14,7 +14,7 @@ body {
 }
 
 .grid {
-  background-color: aquamarine;
+  background-color: white;
   display: grid;
   /* HEIGHT OF HEADER, MAIN MOVIE BOX, BOXES 2*3 */
   grid-template-rows: 50px 333px 421px;
@@ -47,7 +47,6 @@ header {
 .large-img {
   display: flex;
   grid-area: img;
-  background-color: blue;
   border-radius: 6px;
 }
 
@@ -78,9 +77,10 @@ ul {
   font-size: 14px;
 }
 
+/* Big six movies below the main big one */
 .img-box {
   grid-area: box;
-  background-color: green;
+  background-color: white;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
@@ -91,41 +91,18 @@ ul {
   border-radius: 6px;
 }
 
-.img1 {
-  grid-area: img1;
-  background-color: black;
+/* .img-box-name {
+  grid-area: box;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "img1 img2 img3"
+    "img4 img5 img6";
+  gap: 30px;
   border-radius: 6px;
-}
-
-.img2 {
-  grid-area: img2;
-  background-color: black;
-  border-radius: 6px;
-}
-
-.img3 {
-  grid-area: img3;
-  background-color: black;
-  border-radius: 6px;
-}
-
-.img4 {
-  grid-area: img4;
-  background-color: black;
-  border-radius: 6px;
-}
-
-.img5 {
-  grid-area: img5;
-  background-color: black;
-  border-radius: 6px;
-}
-
-.img6 {
-  grid-area: img6;
-  background-color: black;
-  border-radius: 6px;
-}
+} */
 
 .nowplay {
   height: 100%;
@@ -133,30 +110,9 @@ ul {
   border-radius: 6px;
 }
 
-.nowplay1 {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.nowplay2 {
-}
-
-.nowplay3 {
-}
-
-.nowplay4 {
-}
-
-.nowplay5 {
-}
-
-.nowplay6 {
-}
-
 .sidebar {
   grid-area: side;
-  background-color: yellow;
+  background-color: #b30623;
   border-radius: 6px;
 }
 
@@ -172,18 +128,128 @@ ul {
 .popmov {
   align-self: normal;
   margin: 5% 0px -5% 5%;
+  color: white;
+  font-weight: bold;
 }
 
 /* REMEMBER CLOCK */
 .comsoo {
   align-self: normal;
   margin: 5% 0px -5% 5%;
+  color: white;
+  font-weight: bold;
 }
 
-/* movies in sidebar */
+/* movie box in sidebar */
 .movie {
   width: 90%;
   height: 90px;
-  background-color: crimson;
+  background-color: white;
   border-radius: 6px;
+}
+
+.sidebarImg {
+  grid-area: side;
+  border-radius: 6px;
+}
+
+/* sidebar movie images container */
+.sidebarImg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  gap: 20%;
+}
+
+/* movie image size for the sidebar boxes */
+.sidebarImg {
+  margin-top: 17%;
+  margin-bottom: 45%;
+  margin-left: 9%;
+  width: 65px;
+  height: 65px;
+  border-radius: 6px;
+}
+
+.sidebarImg4 {
+  margin-top: 78%;
+}
+
+.movietitle {
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 6%;
+  margin-left: 40%;
+}
+
+.moviedescription {
+  color: grey;
+  font-size: 8px;
+  margin-top: -3%;
+  margin-left: 40%;
+}
+
+.nowplaying {
+  margin-top: -154%;
+  margin-left: -220%;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.left {
+  margin-top: -200.65%;
+  margin-left: -40%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.right {
+  margin-top: -165%;
+  margin-left: 310%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.bigpicname {
+  margin-top: -222%;
+  margin-left: -90%;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+.bigpicdesc {
+  margin-top: -6%;
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+}
+
+.ticketsbox {
+  width: 150px;
+  height: 40px;
+  background-color: #b30623;
+  display: grid;
+  place-items: center;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-top: -190%;
+  margin-left: 18%;
+}
+.imgname {
+  width: 170px;
+  height: 30px;
+  margin-top: -18%;
+  margin-left: 5%;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+}
+.movieGenre {
+  margin-top: -8%;
+  margin-left: 72%;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: normal;
 }
