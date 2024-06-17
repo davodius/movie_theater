@@ -27,33 +27,29 @@
             </nav>
           </div>
         </header>
+        
         <div class="booknow">
           <div class="booknow-container">
             <div class="bookinfo">
               <p style="font-family: 'Oswald', serif">Booking Info</p>
+              <div class="selected-seats">
+                <p>Selected Seats</p>
+                <ul id="selected-seats-list">
+                  <!-- Selected seats will be dynamically added here -->
+                </ul>
             </div>
-
-            <div class="textinbox"><p>Full Name</p></div>
-            <div class="box box1"><div class="namebox"></div></div>
-
-            <div class="textinbox"><p>Email</p></div>
-            <div class="box box2"><div class="emailbox"></div></div>
-
-            <div class="textinbox"><p>Phone Number</p></div>
-            <div class="box box3"><div class="phonenumberbox"></div></div>
-          </div>
-          <div class="biggbox"></div>
+          <div class="boxNamesAndOrders"></div>
           <form action="/submit-form" method="post">
             <div class="form-group">
-              <label for="name">Full name:</label>
+              <label for="name">Full name</label>
               <input type="text" id="name" name="name" required />
             </div>
             <div class="form-group">
-              <label for="email">Email:</label>
+              <label for="email">Email</label>
               <input type="email" id="email" name="email" required />
             </div>
             <div class="form-group">
-              <label for="number">Number:</label>
+              <label for="number">Number</label>
               <input type="phone number" id="number" name="number" required />
             </div>
 
@@ -66,22 +62,12 @@
     </div>
   </body>
 </html>
+<!-- <div class="textinbox"><p>Full Name</p></div>
+            <div class="box box1"><div class="namebox"></div></div>
 
-<!-- <div class="booknow-container"> 
-    <div class="bookinfo"> <p style="font-family: 'Oswald', serif;">Booking Info</p> </div>
-     
-    <div class="box box1">
-            <div class="namebox"></div>
-    </div>
-     <div class="textinbox"> <p> Full Name</p> </div>
+            <div class="textinbox"><p>Email</p></div>
+            <div class="box box2"><div class="emailbox"></div></div>
 
-     <div class="box box2">
-        <div class="emailbox"></div>
-    </div>
-    <div class="textinbox"> <p> Email </p> </div>
-    <div class="box box3">
-        <div class="phonenumberbox"></div>
-     </div>
-     <div class="textinbox"> <p> Phone Number </p> </div>
-    
-    </div> -->
+            <div class="textinbox"><p>Phone Number</p></div>
+            <div class="box box3"><div class="phonenumberbox"></div></div>
+          </div> -->
