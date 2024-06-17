@@ -1,24 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
-}
 .container {
   gap: 10px;
   display: grid;
   width: 1300px;
   margin: 30px auto;
   gap: 30px;
-  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-rows: 100px 250px 400px 100px;
   grid-template-columns: repeat(3, 1fr);
 }
 .header,
 .small-box1 {
-  background-color: rgb(250, 250, 250);
   padding: 20px;
   font-size: 30px;
 }
@@ -62,26 +52,27 @@ ul {
   padding: 0;
   margin: 0;
 }
-.clockwork {
+.clockworkImage {
   width: px;
-  height: 150px;
-  border-radius: 5px;
+  height: 250px;
+  border-radius: 6px;
 }
 .details p {
-  text-align: center;
-  align-items: flex-end;
+  text-align: start;
   display: flex;
-  font-size: small;
+  font-size: bold;
+  width: 300px;
 }
 .details h3 {
-  text-align: center;
-  font-size: smaller;
+  text-align: start;
+  font-size: 20px;
   font-weight: 100;
 }
-.text2 {
+.textMoviedescription {
   display: flex;
-  align-items: flex-end;
-  font-size: small;
+  align-items: flex-start;
+  text-align: start;
+  font-size: medium;
 }
 .box1 {
   gap: 20px;
@@ -102,9 +93,6 @@ ul {
 
 .seats {
   display: grid;
-  /*THIS is the trouble maker, change the grid and dont use auto-fill
-    decide how you want to display them first maybe 2 boxes and a number of seats in each box?
-    if so create the two boxes first ill send you a codepen you can look at*/
   grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
   gap: 5px;
 }
@@ -113,9 +101,9 @@ ul {
   margin-bottom: 10px;
 }
 
+/* hiding the checkbox, styling it with the label  */
 .seat {
   display: none;
-  /* hide the actual checkbox, it will be styled by the label */
 }
 
 .seat-label {

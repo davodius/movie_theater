@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
     <link rel="stylesheet" href="bookinfostyle.css" />
+    <script src="bookinfo.js"></script>
+    <title>booking</title>
   </head>
   <body>
+
     <div class="layout">
       <div class="grid">
         <header>
@@ -28,18 +26,18 @@
             </nav>
           </div>
         </header>
-        
-        <div class="booknow">
-          <div class="booknow-container">
-            <div class="bookinfo">
-              <p style="font-family: 'Oswald', serif">Booking Info</p>
-              <div class="selected-seats">
-                <p>Selected Seats</p>
-                <ul id="selected-seats-list">
-                  <!-- Selected seats will be dynamically added here -->
-                </ul>
-            </div>
-          <div class="box"></div>
+
+      <div class="box">
+        <div class="main-content">
+          <div class="booking"></div>
+          <h2>Booking Info</h2>
+          <div class="selected-seats">
+            <h3>Selected Seats</h3>
+            <ul id="selected-seats-list">
+              <!-- Selected seats will be dynamically added here -->
+            </ul>
+          </div>
+
           <form action="/submit-form" method="post">
             <div class="form-group">
               <label for="name">Full name</label>
@@ -50,7 +48,7 @@
               <input type="email" id="email" name="email" required />
             </div>
             <div class="form-group">
-              <label for="number">Number</label>
+              <label for="number">Phone Number</label>
               <input type="phone number" id="number" name="number" required />
             </div>
 

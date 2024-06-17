@@ -50,21 +50,8 @@ ul {
   font-size: 14px;
 }
 
-.booknow {
-  margin-left: 50%;
-  margin-top: 16%;
-  width: 580px;
-  height: 530px;
-  background-color: #b30623;
-  display: grid;
-  font-weight: bolder;
+.main-content {
   color: white;
-  font-size: 32px;
-  border-radius: 6px;
-}
-
-.bookinfo {
-  margin-left: 5%;
 }
 .selected-seats {
   font-size: 18px;
@@ -74,43 +61,44 @@ ul {
 .box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #b00202;
-  width: 400px;
-  height: auto;
+  align-items: start;
+  justify-content: space-between;
+  background-color: #b30623;
+  width: 580px;
+  height: 530px;
   padding: 20px;
   border-radius: 10px;
   margin: 0 auto;
+  margin-left: 45%;
+  margin-top: 10%;
 }
 
 .form-group {
   align-items: start;
-  margin-bottom: 80px;
   margin: 10px;
   display: flex;
   font-size: 18px;
   font-weight: bold;
 }
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
+  margin-top: 8%;
 }
 
 .form-group label {
   color: #faf5f5;
-  margin-bottom: 5px;
 }
 
 .form-group input {
-  width: 95%;
+  width: 500px;
   padding: 10px;
   border-radius: 6px;
   border: none;
 }
 .selected-seats-list {
-  color: black;
+  color: white;
 }
 li {
   font-family: sans-serif;
