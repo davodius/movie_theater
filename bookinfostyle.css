@@ -71,7 +71,17 @@ ul {
   font-weight: bold;
 }
 
-.boxNamesAndOrders {
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b00202;
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -98,4 +108,18 @@ ul {
   padding: 10px;
   border-radius: 6px;
   border: none;
+}
+.selected-seats-list {
+  color: black;
+}
+li {
+  font-family: sans-serif;
+  display: inline-block;
+  margin-left: 20px;
+  color: #fff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

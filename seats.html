@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="seat.css" />
+    <script src="saveSeat.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="left-item">
+          <img src="img/logo.png" alt="logo" class="logo" />
+        </div>
+        <div class="right-item">
+          <ul>
+            <li>Playing</li>
+            <li>Coming Soon</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-box1">
+        <div class="box1">
+          <img
+            class="clockwork"
+            src="img/theClockworkMirage.webp"
+            alt="clockwork"
+          />
+          <div class="details">
+            <p>The Mirage Clockwork</p>
+            <h3>Science Fiction / thriller</h3>
+          </div>
+          <div class="text2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
+              asperiores id distinctio excepturi laboriosam reprehenderit soluta
+              sit culpa voluptas deserunt? Soluta necessitatibus vel ipsa dicta
+              enim laborum tenetur illo ad?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="small-box2">
+        <div class="theater">
+          <!-- grid to create 2 boxes -->
+          <div class="grid">
+            <!-- first grid box with seats -->
+            <div class="box1">
+              <div class="seats">
+                <div class="row">
+                  <input
+                    type="checkbox"
+                    id="seat1-1"
+                    class="seat"
+                    onclick="saveSeats()"
+                  />
+                  <label for="seat1-1" class="seat-label available"></label>
+                  <input type="checkbox" id="seat1-2" class="seat" />
+                  <label for="seat1-2" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat1-3" class="seat" />
+                  <label for="seat1-3" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat1-4" class="seat" />
+                  <label for="seat1-4" class="seat-label available"></label>
+                  <input type="checkbox" id="seat1-5" class="seat" />
+                  <label for="seat1-5" class="seat-label available"></label>
+                </div>
+                <!-- row 2 -->
+                <div class="row">
+                  <input type="checkbox" id="seat2-1" class="seat" />
+                  <label for="seat2-1" class="seat-label available"></label>
+                  <input type="checkbox" id="seat2-2" class="seat" />
+                  <label for="seat2-2" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat2-3" class="seat" />
+                  <label for="seat2-3" class="seat-label available"></label>
+                  <input type="checkbox" id="seat2-4" class="seat" />
+                  <label for="seat2-4" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat2-5" class="seat" />
+                  <label for="seat2-5" class="seat-label available"></label>
+                </div>
+                <!-- additional rows can be added following the same pattern -->
+                <div class="row">
+                  <input type="checkbox" id="seat3-1" class="seat" />
+                  <label for="seat3-1" class="seat-label available"></label>
+                  <input type="checkbox" id="seat3-2" class="seat" />
+                  <label for="seat3-2" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat3-3" class="seat" />
+                  <label for="seat3-3" class="seat-label available"></label>
+                  <input type="checkbox" id="seat3-4" class="seat" />
+                  <label for="seat3-4" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat3-5" class="seat" />
+                  <label for="seat3-5" class="seat-label available"></label>
+                </div>
+              </div>
+            </div>
+            <!-- second grid box with seats -->
+            <div class="box2">
+              <div class="seats">
+                <!-- row 1 -->
+                <div class="row">
+                  <input type="checkbox" id="seat4-1" class="seat" />
+                  <label for="seat4-1" class="seat-label available"></label>
+                  <input type="checkbox" id="seat4-2" class="seat" />
+                  <label for="seat4-2" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat4-3" class="seat" />
+                  <label for="seat4-3" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat4-4" class="seat" />
+                  <label for="seat4-4" class="seat-label available"></label>
+                  <input type="checkbox" id="seat4-5" class="seat" />
+                  <label for="seat4-5" class="seat-label available"></label>
+                </div>
+                <!-- row 2 -->
+                <div class="row">
+                  <input type="checkbox" id="seat5-1" class="seat" />
+                  <label for="seat5-1" class="seat-label available"></label>
+                  <input type="checkbox" id="seat5-2" class="seat" />
+                  <label for="seat5-2" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat5-3" class="seat" />
+                  <label for="seat5-3" class="seat-label available"></label>
+                  <input type="checkbox" id="seat5-4" class="seat" />
+                  <label for="seat5-4" class="seat-label reserved"></label>
+                  <input type="checkbox" id="seat5-5" class="seat" />
+                  <label for="seat5-5" class="seat-label available"></label>
+                </div>
+                <!-- additional rows can be added following the same pattern -->
+              </div>
+              <button onclick="saveSeats()">
+                <a href="bookinfo.html">Book Now!</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
